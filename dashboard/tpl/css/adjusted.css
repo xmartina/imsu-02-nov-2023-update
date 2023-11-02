@@ -51,11 +51,15 @@
     background-color: #202C45 !important;
     border-bottom: 1px solid #2c724f !important;
     color: #fff;
+    font-size: 13px;
+    font-weight: 200;
 }
 .foot-nav li a{
     color: #fff;
+    font-size: 13px;
+    font-weight: 200;
 }
-.foot-nav li a:hover{
+.foot-nav li:hover{
     border-radius: 12px;
     color: #202C45 !important;
     background-color: #fff;
