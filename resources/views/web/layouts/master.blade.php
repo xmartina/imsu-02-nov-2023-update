@@ -186,7 +186,7 @@
     <div id="header-sticky" class="menu-area">
         <div class="container">
             <div class="second-menu">
-                <div class="row align-items-center">
+                <div class="row align-items-center py-3">
                     <div class="col-xl-3 col-lg-3">
                         @if(isset($setting))
                             <div class="logo">
@@ -198,7 +198,7 @@
 
                     <div class="offset-5 col-xl-4 col-lg-4 d-flex justify-content-between align-items-center">
                         <div class="header-call d-flex align-items-center justify-content-around ">
-                            <div class="icon-cal "><span class="material-symbols-outlined pr-3">call</span>
+                            <div class="icon-cal d-flex bg-dark rounded-circle justify-content-center align-items-center text-white"><span class="material-symbols-outlined pr-3">call</span>
                             </div>
                             <div class="call-text-header ">
                                 CALL US TODAY!<br/>
@@ -208,10 +208,10 @@
                             </div>
                         </div>
                         <div class="header-call d-flex align-items-center justify-content-around ">
-                            <div class="icon-cal "><span class="material-symbols-outlined pr-3">call</span>
+                            <div class="icon-cal d-flex bg-dark rounded-circle justify-content-center align-items-center text-white"><span class="material-symbols-outlined">mail</span>
                             </div>
                             <div class="call-text-header ">
-                                CALL US TODAY!<br/>
+                                WRITE US!<br/>
                                 @isset($topbarSetting->email)
                                     <a href="tel:{{ str_replace(' ', '', $topbarSetting->email ?? '') }}">{{ $topbarSetting->email ?? '' }}</a>
                                 @endisset
