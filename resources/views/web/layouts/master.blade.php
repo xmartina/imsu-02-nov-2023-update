@@ -239,7 +239,7 @@
                                     <li class="{{ Request::is('course*') ? 'current' : '' }}"><a
                                             href="{{ route('course') }}">{{ __('navbar_course') }}</a></li>
                                     <li class="{{ Request::is('event*') ? 'current' : '' }}"><a
-                                            href="{{ route('event') }}">{{ __('navbar_event') }}</a></li>
+                                            href="{{ route('event') }}">About IMSU</a></li>
                                     <li class="{{ Request::is('faq*') ? 'current' : '' }}"><a
                                             href="{{ route('faq') }}">{{ __('navbar_faqs') }}</a></li>
                                     <li class="{{ Request::is('gallery*') ? 'current' : '' }}"><a
@@ -261,7 +261,7 @@
                                         <div class="second-header-btn">
 {{--                                            <a href="{{ route('application.index') }}" target="_blank"--}}
 {{--                                               class="btn">{{ __('navbar_admission') }}</a>--}}
-                                            <div class="btn cursor-pointer">Portal</div>
+                                            <div class="btn cursor-pointer"><a href="https://imsu.edu.ng/portal">Portal</a> </div>
                                         </div>
                                     </li>
                                 </ul>
