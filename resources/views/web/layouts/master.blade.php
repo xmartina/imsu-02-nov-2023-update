@@ -172,7 +172,28 @@
                             @endif
                         </div>
 
-                        <div class="col-xl-6 col-lg-6">
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="row justify-content-between align-items-center">
+                                <div class="header-call">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <span class="material-symbols-outlined">call</span>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            CALL US TODAY!<br />
+                                            @isset($topbarSetting->phone)
+                                            <a href="tel:{{ str_replace(' ', '', $topbarSetting->phone ?? '') }}">{{ $topbarSetting->phone ?? '' }}</a>
+                                            @endisset
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-xl-9 col-lg-9">
                             <div class="main-menu text-right text-xl-right">
                                 <nav id="mobile-menu">
                                     <ul>
@@ -189,18 +210,18 @@
 
                         <div class="col-xl-3 col-lg-3 text-right d-none d-lg-block text-right text-xl-right">
                             @php
-                            $application = App\Models\ApplicationSetting::status();
+                                $application = App\Models\ApplicationSetting::status();
                             @endphp
                             @isset($application)
-                            <div class="login">
-                                <ul>
-                                    <li>
-                                        <div class="second-header-btn">
-                                           <a href="{{ route('application.index') }}" target="_blank" class="btn">{{ __('navbar_admission') }}</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+                                <div class="login">
+                                    <ul>
+                                        <li>
+                                            <div class="second-header-btn">
+                                                <a href="{{ route('application.index') }}" target="_blank" class="btn">{{ __('navbar_admission') }}</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             @endisset
                         </div>
 
