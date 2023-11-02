@@ -219,7 +219,9 @@
                         </div>
                     </div>
 
-
+                    <div class="col-12">
+                        <div class="mobile-menu"></div>
+                    </div>
                 </div>
                 <div class="row align-items-center">
                     <div class="col-xl-9 col-lg-9">
@@ -261,9 +263,6 @@
                         @endisset
                     </div>
 
-                    <div class="col-12">
-                        <div class="mobile-menu"></div>
-                    </div>
                 </div>
             </div>
         </div>
