@@ -64,7 +64,7 @@
             <div class="container">
                 <div class="row align-items-center">
 
-                    <div class="col-lg-3 col-md-3 d-none d-lg-block ">
+                    <div class="col-lg-2 col-md-2 d-none d-lg-block ">
                         @if(isset($topbarSetting) && $topbarSetting->social_status == 1)
                         <div class="header-social">
                             <span>
@@ -92,8 +92,8 @@
                         @endif
                     </div>
 
-                    <div class="col-lg-9 col-md-9 d-none d-lg-block text-right">
-                        <div class="header-cta d-flex align-items-center">
+                    <div class="col-lg-10 col-md-10 d-none d-lg-block text-right">
+                        <div class="header-cta align-items-center">
                             <ul>
                                <li class="mega cursor-pointer d-flex align-items-center justify-content-between"> Staff <span class="ml-2 material-symbols-outlined">expand_more</span>
                                    <ul class="d-none">
