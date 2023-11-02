@@ -227,45 +227,48 @@
                 </div>
             </div>
         </div>
-        <div class="row align-items-center foot-nav">
+        <div class="foot-nav">
             <div class="container">
-                <div class="col-xl-9 col-lg-9">
-                    <div class="main-menu text-right text-xl-right">
-                        <nav id="mobile-menu">
-                            <ul>
-                                <li class="{{ Request::path() == '/' ? 'current' : '' }}"><a
-                                        href="{{ route('home') }}">{{ __('navbar_home') }}</a></li>
-                                <li class="{{ Request::is('course*') ? 'current' : '' }}"><a
-                                        href="{{ route('course') }}">{{ __('navbar_course') }}</a></li>
-                                <li class="{{ Request::is('event*') ? 'current' : '' }}"><a
-                                        href="{{ route('event') }}">{{ __('navbar_event') }}</a></li>
-                                <li class="{{ Request::is('faq*') ? 'current' : '' }}"><a
-                                        href="{{ route('faq') }}">{{ __('navbar_faqs') }}</a></li>
-                                <li class="{{ Request::is('gallery*') ? 'current' : '' }}"><a
-                                        href="{{ route('gallery') }}">{{ __('navbar_gallery') }}</a></li>
-                                <li class="{{ Request::is('news*') ? 'current' : '' }}"><a
-                                        href="{{ route('news') }}">{{ __('navbar_news') }}</a></li>
-                            </ul>
-                        </nav>
+                <div class="row align-items-center">
+                    <div class="col-xl-9 col-lg-9">
+                        <div class="main-menu text-right text-xl-right">
+                            <nav id="mobile-menu">
+                                <ul>
+                                    <li class="{{ Request::path() == '/' ? 'current' : '' }}"><a
+                                            href="{{ route('home') }}">{{ __('navbar_home') }}</a></li>
+                                    <li class="{{ Request::is('course*') ? 'current' : '' }}"><a
+                                            href="{{ route('course') }}">{{ __('navbar_course') }}</a></li>
+                                    <li class="{{ Request::is('event*') ? 'current' : '' }}"><a
+                                            href="{{ route('event') }}">{{ __('navbar_event') }}</a></li>
+                                    <li class="{{ Request::is('faq*') ? 'current' : '' }}"><a
+                                            href="{{ route('faq') }}">{{ __('navbar_faqs') }}</a></li>
+                                    <li class="{{ Request::is('gallery*') ? 'current' : '' }}"><a
+                                            href="{{ route('gallery') }}">{{ __('navbar_gallery') }}</a></li>
+                                    <li class="{{ Request::is('news*') ? 'current' : '' }}"><a
+                                            href="{{ route('news') }}">{{ __('navbar_news') }}</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 text-right d-none d-lg-block text-right text-xl-right">
+                        @php
+                            $application = App\Models\ApplicationSetting::status();
+                        @endphp
+                        @isset($application)
+                            <div class="login">
+                                <ul>
+                                    <li>
+                                        <div class="second-header-btn">
+                                            <a href="{{ route('application.index') }}" target="_blank"
+                                               class="btn">{{ __('navbar_admission') }}</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        @endisset
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 text-right d-none d-lg-block text-right text-xl-right">
-                    @php
-                        $application = App\Models\ApplicationSetting::status();
-                    @endphp
-                    @isset($application)
-                        <div class="login">
-                            <ul>
-                                <li>
-                                    <div class="second-header-btn">
-                                        <a href="{{ route('application.index') }}" target="_blank"
-                                           class="btn">{{ __('navbar_admission') }}</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    @endisset
-                </div>
+
             </div>
         </div>
     </div>
