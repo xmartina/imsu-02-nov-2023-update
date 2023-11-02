@@ -59,15 +59,13 @@
     border-radius: 12px;
     color: #202C45 !important;
     background-color: #fff;
-    transition: all 350ms linear;
 }
 .main-menu ul li.current a {
     color: #fff;
-    font-weight: 300;
 }
 .foot-nav .main-menu ul li a {
     color: #fff;
     padding: 6px;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 13px;
+    font-weight: 200;
 }
