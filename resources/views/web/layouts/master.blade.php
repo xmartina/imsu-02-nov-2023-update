@@ -175,11 +175,11 @@
                         <div class="offset-5 col-xl-4 col-lg-4">
                             <div class="row justify-content-between align-items-center">
                                 <div class="header-call">
-                                    <div class="row align-items-center font-14">
-                                        <div class="col-lg-3">
+                                    <div class="row align-items-center font-12">
+                                        <div class="col-lg-3 pr-2">
                                             <span class="material-symbols-outlined">call</span>
                                         </div>
-                                        <div class="col-lg-9">
+                                        <div class="col-lg-9 pl-0">
                                             CALL US TODAY!<br />
                                             @isset($topbarSetting->phone)
                                             <a href="tel:{{ str_replace(' ', '', $topbarSetting->phone ?? '') }}">{{ $topbarSetting->phone ?? '' }}</a>
