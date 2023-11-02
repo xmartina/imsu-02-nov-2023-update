@@ -230,7 +230,7 @@
         <div class="foot-nav">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-xl-9 col-lg-9">
+                    <div class="col-xl-10 col-lg-10">
                         <div class="main-menu text-right text-xl-right">
                             <nav id="mobile-menu">
                                 <ul class="d-flex justify-content-between">
@@ -288,7 +288,7 @@
                             </nav>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 text-right d-none d-lg-block text-right text-xl-right">
+                    <div class="col-xl-2 col-lg-2 text-right d-none d-lg-block text-right text-xl-right">
                         @php
                             $application = App\Models\ApplicationSetting::status();
                         @endphp
