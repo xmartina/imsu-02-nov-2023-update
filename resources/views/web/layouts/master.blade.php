@@ -175,7 +175,7 @@
                         <div class="offset-5 col-xl-4 col-lg-4">
                             <div class="row justify-content-between align-items-center">
                                 <div class="header-call">
-                                    <div class="row">
+                                    <div class="row align-items-center font-14">
                                         <div class="col-lg-3">
                                             <span class="material-symbols-outlined">call</span>
                                         </div>
