@@ -92,33 +92,15 @@
                         @endif
                     </div>
 
-                    <div class="col-lg-8 col-md-8 d-none d-lg-block text-right">
+                    <div class="col-lg-9 col-md-9 d-none d-lg-block text-right">
                         <div class="header-cta">
                             <ul>
-                               @isset($topbarSetting->phone)
-                               <li>
-                                  <div class="call-box">
-                                     <div class="icon">
-                                        <img src="{{ asset('web/img/icon/phone-call.png') }}" alt="img">
-                                     </div>
-                                     <div class="text">
-                                        <strong><a href="tel:{{ str_replace(' ', '', $topbarSetting->phone ?? '') }}">{{ $topbarSetting->phone ?? '' }}</a></strong>
-                                     </div>
-                                  </div>
+                               <li class="mega cursor-pointer">Staff <span class="ml-2 material-symbols-outlined">expand_more</span>
+                                   <ul class="d-none">
+                                       <li class="child">Academic Staff </li>
+                                       <li class="child">Non-Academic Staff  </li>
+                                   </ul>
                                </li>
-                               @endisset
-                               @isset($topbarSetting->email)
-                               <li>
-                                  <div class="call-box">
-                                     <div class="icon">
-                                        <img src="{{ asset('web/img/icon/mailing.png') }}" alt="img">
-                                     </div>
-                                     <div class="text">
-                                        <strong><a href="mailto:{{ $topbarSetting->email ?? '' }}">{{ $topbarSetting->email ?? '' }}</a></strong>
-                                     </div>
-                                  </div>
-                               </li>
-                               @endisset
                             </ul>
                         </div>
                     </div>
