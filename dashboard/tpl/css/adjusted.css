@@ -28,3 +28,7 @@
 .header-cta{
     font-size: 13px;
 }
+.header-cta .mega span{
+    font-size: 9px;
+    font-weight: 300;
+}
