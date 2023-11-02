@@ -234,18 +234,56 @@
                         <div class="main-menu text-right text-xl-right">
                             <nav id="mobile-menu">
                                 <ul>
-                                    <li class="{{ Request::path() == '/' ? 'current' : '' }}"><a
-                                            href="{{ route('home') }}">{{ __('navbar_home') }}</a></li>
-                                    <li class="{{ Request::is('course*') ? 'current' : '' }}"><a
-                                            href="{{ route('course') }}">{{ __('navbar_course') }}</a></li>
-                                    <li class="{{ Request::is('event*') ? 'current' : '' }}"><a
-                                            href="{{ route('event') }}">About IMSU</a></li>
-                                    <li class="{{ Request::is('faq*') ? 'current' : '' }}"><a
-                                            href="{{ route('faq') }}">{{ __('navbar_faqs') }}</a></li>
-                                    <li class="{{ Request::is('gallery*') ? 'current' : '' }}"><a
-                                            href="{{ route('gallery') }}">{{ __('navbar_gallery') }}</a></li>
-                                    <li class="{{ Request::is('news*') ? 'current' : '' }}"><a
-                                            href="{{ route('news') }}">{{ __('navbar_news') }}</a></li>
+                                    <li class="main-nav d-flex align-items-center justify-content-between">
+                                        About IMSU <span class="ml-2 material-symbols-outlined">expand_more</span>
+                                        <div class="sub-main d-none">
+                                            <div class="row">
+                                                <div class="col-lg-7">
+                                                    <h3>About us</h3>
+                                                    <p>
+                                                        Imo State University was established in 1981 and has since grown to become one of the leading universities in the country. The university offers a wide range of undergraduate and postgraduate programs in fields. It also has a strong research focus and is known for its commitment to academic excellence and innovation
+                                                    </p>
+                                                </div>
+                                                <div class="col-lg-5">
+
+                                                    <ul>
+                                                        <li><a href="https://imsu.edu.ng/history.php">History</a></li>
+                                                        <li><a href="https://imsu.edu.ng/leadership.php">Leadership & Organisation</a></li>
+                                                        <li><a href="https://imsu.edu.ng/governing-council.php">Governing Council</a></li>
+                                                        <li><a href="https://imsu.edu.ng/">Our Awards</a></li>
+                                                        <li><a href="https://imsu.edu.ng/">Mission & Vision</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-nav d-flex align-items-center justify-content-between">
+                                        Academics <span class="ml-2 material-symbols-outlined">expand_more</span>
+                                    </li>
+                                    <li class="main-nav d-flex align-items-center justify-content-between">
+                                        Units <span class="ml-2 material-symbols-outlined">expand_more</span>
+                                    </li>
+                                    <li class="main-nav d-flex align-items-center justify-content-between">
+                                        Research <span class="ml-2 material-symbols-outlined">expand_more</span>
+                                    </li>
+                                    <li class="main-nav d-flex align-items-center justify-content-between">
+                                        Resources <span class="ml-2 material-symbols-outlined">expand_more</span>
+                                    </li>
+                                    <li class="main-nav d-flex align-items-center justify-content-between">
+                                        Admissions <span class="ml-2 material-symbols-outlined">expand_more</span>
+                                    </li>
+                                    <li class="main-nav d-flex align-items-center justify-content-between">
+                                        Enterprise <span class="ml-2 material-symbols-outlined">expand_more</span>
+                                    </li>
+                                    <li class="main-nav">
+                                        Campuses
+                                    </li>
+                                    <li class="main-nav">
+                                        E-Learning
+                                    </li>
+                                    <li class="main-nav">
+                                        Contact Us
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
