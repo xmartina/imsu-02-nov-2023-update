@@ -93,7 +93,7 @@
                     </div>
 
                     <div class="col-lg-9 col-md-9 d-none d-lg-block text-right">
-                        <div class="header-cta">
+                        <div class="header-cta d-flex align-items-center">
                             <ul>
                                <li class="mega cursor-pointer">Staff <span class="ml-2 material-symbols-outlined">expand_more</span>
                                    <ul class="d-none">
