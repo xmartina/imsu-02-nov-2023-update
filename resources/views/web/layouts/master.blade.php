@@ -233,7 +233,7 @@
                     <div class="col-xl-9 col-lg-9">
                         <div class="main-menu text-right text-xl-right">
                             <nav id="mobile-menu">
-                                <ul>
+                                <ul class="d-flex justify-content-evenly">
                                     <li class="main-nav d-flex align-items-center justify-content-between">
                                         About IMSU <span class="ml-2 material-symbols-outlined">expand_more</span>
                                         <div class="sub-main d-none">
