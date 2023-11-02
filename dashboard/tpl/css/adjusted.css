@@ -52,8 +52,9 @@
     border-bottom: 1px solid #2c724f !important;
     color: #fff;
 }
-.foot-nav li a{
+.foot-nav li a:hover{
     border-radius: 12px;
     color: #202C45 !important;
     background-color: #fff;
+    transition: all 350ms linear;
 }
