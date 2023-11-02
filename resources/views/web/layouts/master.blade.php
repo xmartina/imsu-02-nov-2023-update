@@ -196,7 +196,7 @@
                         @endif
                     </div>
 
-                    <div class="offset-5 d-none d-lg-block col-xl-4 col-lg-4 d-flex justify-content-between align-items-center">
+                    <div class="offset-5 d-none d-lg-flex col-xl-4 col-lg-4 d-flex justify-content-between align-items-center">
                         <div class="header-call d-flex align-items-center justify-content-evenly ">
                             <div class="icon-cal d-flex bg-dark rounded justify-content-center align-items-center text-white p-1 mr-3"><span class="material-symbols-outlined">call</span>
                             </div>
