@@ -95,15 +95,62 @@
                     <div class="col-lg-9 col-md-9 d-none d-lg-block text-right">
                         <div class="header-cta d-flex justify-content-between align-items-center">
                             <ul>
-                               <li class="mega cursor-pointer d-flex align-items-center justify-content-between">Staff <span class="ml-2 material-symbols-outlined">expand_more</span>
+                               <li class="mega cursor-pointer d-flex align-items-center justify-content-between"> Staff <span class="ml-2 material-symbols-outlined">expand_more</span>
                                    <ul class="d-none">
                                        <li class="child">Academic Staff </li>
                                        <li class="child">Non-Academic Staff  </li>
                                    </ul>
                                </li>
-                            </ul>
-                            <ul>
                                 <li><a href="#">Students</a></li>
+                                <li><a href="#">Alumni</a></li>
+                                <li><a href="#">Transcript</a></li>
+                                <li><a href="#">Giving/Donations</a></li>
+                                <li><a href="#">Making Payments</a></li>
+                                <li class="mega cursor-pointer d-flex align-items-center justify-content-between"> Tetfund Intervention <span class="ml-2 material-symbols-outlined">expand_more</span>
+                                    <ul class="d-none">
+                                        <li class="child sub-mega d-none cursor-pointer">Special Intervention »
+                                            <ul>
+                                                <li class="sub-child"><a href="https://imsu.edu.ng/tetfund-intervention/">Zonal Intervention</a>
+                                                </li>
+                                                <li class="sub-child"><a href="https://imsu.edu.ng/tetfund-intervention/">Disaster Recovery</a>
+                                                </li>
+                                                <li class="sub-child"><a href="https://imsu.edu.ng/tetfund-intervention/">High Impact Intervention</a>
+                                                </li>
+                                                <li class="sub-child"><a href="https://imsu.edu.ng/tetfund-intervention/">National Research Fund</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="child sub-mega d-none cursor-pointer">
+                                            Annual Intervention »
+                                            <ul>
+                                                <li class="sub-child"><a href="https://imsu.edu.ng/tetfund-intervention/">Academic Manuscript Development</a>
+                                                </li>
+                                                <li class="sub-child"><a href="https://imsu.edu.ng/tetfund-intervention/">Entrepreneurship</a>
+                                                </li>
+                                                <li class="sub-child"><a href="https://imsu.edu.ng/tetfund-intervention/">Equipment Fabrication</a>
+                                                </li>
+                                                <li class="sub-child"><a href="https://imsu.edu.ng/tetfund-intervention/">Tetfund Project Maintanance</a>
+                                                </li>
+                                                <li class="sub-child"><a href="https://imsu.edu.ng/tetfund-intervention/">Academic Research Journal</a>
+                                                </li>
+                                                <li class="sub-child"><a href="https://imsu.edu.ng/tetfund-intervention/">ICT Support</a>
+                                                </li>
+                                                <li class="sub-child"><a href="https://imsu.edu.ng/tetfund-intervention/">Institution Based Research</a>
+                                                </li>
+                                                <li class="sub-child"><a href="https://imsu.edu.ng/tetfund-intervention/">Teaching Practice</a>
+                                                </li>
+                                                <li class="sub-child"><a href="https://imsu.edu.ng/tetfund-intervention/">Library Development</a>
+                                                </li>
+                                                <li class="sub-child"><a href="https://imsu.edu.ng/tetfund-intervention/">Academic Staff Training</a>
+                                                </li>
+                                                <li class="sub-child"><a href="https://imsu.edu.ng/tetfund-intervention/">Physical Infrastructure</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Scholarships</a></li>
+                                <li><a href="https://webmail.imsu.edu.ng/">Webmail</a></li>
                             </ul>
                         </div>
                     </div>
