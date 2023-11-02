@@ -2807,13 +2807,16 @@ margin: 0;
 /* Large Mobile :480px. */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
     .services-active2 .slider-nav .slick-list.draggable {
-    width: 500px;
-    float: right;
-}
-    .services-item {
-    width: 470px;
-}
-    .button-group button {
-    margin: 0 2px;
+        width: 500px;
+        float: right;
+    }
 
+    .services-item {
+        width: 470px;
+    }
+
+    .button-group button {
+        margin: 0 2px;
+
+    }
 }
