@@ -148,129 +148,607 @@
 
  <body>
 
- 	<!-- header -->
-    <header class="header-area header-three">
-       <div class="header-top second-header d-none d-md-block">
+{{-- 	Start Inc Header--}}
+<div id="wrapper" class="clearfix">
+    <!-- preloader -->
+    <!-- <div id="preloader">
+      <div id="spinner">
+        <div class="preloader-dot-loading">
+          <div class="cssload-loading"><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+      <div id="disable-preloader" class="btn btn-default btn-sm">Disable Preloader</div>
+    </div>  -->
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-top bg-theme-color-2 sm-text-center p-0">
             <div class="container">
-                <div class="row align-items-center">
-
-                    <div class="col-lg-4 col-md-4 d-none d-lg-block ">
-                        @if(isset($topbarSetting) && $topbarSetting->social_status == 1)
-                        <div class="header-social">
-                            <span>
-                            @if(isset($socialSetting->facebook))
-                            <a href="{{ $socialSetting->facebook }}" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            @endif
-                            @if(isset($socialSetting->instagram))
-                            <a href="{{ $socialSetting->instagram }}" target="_blank"><i class="fab fa-instagram"></i></a>
-                            @endif
-                            @if(isset($socialSetting->twitter))
-                            <a href="{{ $socialSetting->twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>
-                            @endif
-                            @if(isset($socialSetting->linkedin))
-                            <a href="{{ $socialSetting->linkedin }}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                            @endif
-                            @if(isset($socialSetting->pinterest))
-                            <a href="{{ $socialSetting->pinterest }}" target="_blank"><i class="fab fa-pinterest"></i></a>
-                            @endif
-                            @if(isset($socialSetting->youtube))
-                            <a href="{{ $socialSetting->youtube }}" target="_blank"><i class="fab fa-youtube"></i></a>
-                            @endif
-                           </span>
-                           <!--  /social media icon redux -->
-                        </div>
-                        @endif
-                    </div>
-
-                    <div class="col-lg-8 col-md-8 d-none d-lg-block text-right">
-                        <div class="header-cta">
-                            <ul>
-                               @isset($topbarSetting->phone)
-                               <li>
-                                  <div class="call-box">
-                                     <div class="icon">
-                                        <img src="{{ asset('web/img/icon/phone-call.png') }}" alt="img">
-                                     </div>
-                                     <div class="text">
-                                        <strong><a href="tel:{{ str_replace(' ', '', $topbarSetting->phone ?? '') }}">{{ $topbarSetting->phone ?? '' }}</a></strong>
-                                     </div>
-                                  </div>
-                               </li>
-                               @endisset
-                               @isset($topbarSetting->email)
-                               <li>
-                                  <div class="call-box">
-                                     <div class="icon">
-                                        <img src="{{ asset('web/img/icon/mailing.png') }}" alt="img">
-                                     </div>
-                                     <div class="text">
-                                        <strong><a href="mailto:{{ $topbarSetting->email ?? '' }}">{{ $topbarSetting->email ?? '' }}</a></strong>
-                                     </div>
-                                  </div>
-                               </li>
-                               @endisset
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="widget no-border m-0">
+                            <ul class="styled-icons icon-circled icon-sm pull-left flip sm-pull-none sm-text-center mt-sm-15">
+                                <li><a href="#"><i class="fa fa-facebook text-white"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter text-white"></i></a></li>
+                                <!-- <li><a href="#"><i class="fa fa-google-plus text-white"></i></a></li> -->
+                                <li><a href="#"><i class="fa fa-instagram text-white"></i></a></li>
+                                <!-- <li><a href="#"><i class="fa fa-linkedin text-white"></i></a></li> -->
                             </ul>
                         </div>
                     </div>
+                    <div class="col-md-10">
+                        <div class="widget m-0 pull-right sm-pull-none sm-text-center">
+                            <ul class="list-inline pull-right">
 
+                                <!-- <li class="mb-0 pb-0">
+                                  <div class="top-dropdown-outer pt-5 pb-10">
+                                    <a class="top-search-box has-dropdown text-white text-hover-theme-colored"><i class="fa fa-search font-13"></i> &nbsp;</a>
+                                    <ul class="dropdown">
+                                      <li>
+                                        <div class="search-form-wrapper">
+                                          <form method="get" class="mt-10">
+                                            <input type="text" onfocus="if(this.value =='Enter your search') { this.value = ''; }" onblur="if(this.value == '') { this.value ='Enter your search'; }" value="Enter your search" id="searchinput" name="s" class="">
+                                            <label><input type="submit" name="submit" value=""></label>
+                                          </form>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </li> -->
+                            </ul>
+                        </div>
+                        <div class="widget no-border m-0 mr-15 pull-right flip sm-pull-none sm-text-center">
+
+
+                            <div class="widget no-border m-0">
+                                <ul class="list-inline font-13 sm-text-center mt-5">
+                                    <li>
+                                        <div class="dropdown show" >
+
+                                            <button class="btn bt-primary dropdown-toggle" style="background: #2c724f; color: #fff;"  id="dropdownMenuLink"
+                                                    data-toggle="dropdown" aria-expanded="false">
+                                                Staff
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background: #202c45; ">
+
+                                                <li>
+                                                    <a class="dropdown-item" href="#" style="color: #ff9900; font-weight: bold;">
+                                                        Academic Staff
+                                                    </a>
+                                                    <!--<a class="dropdown-item" href="academic-staff.php" style="color: #ff9900; font-weight: bold;">-->
+                                                    <!-- Academic Staff -->
+                                                    <!--</a>-->
+
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#" style="color: #ff9900; font-weight: bold;">
+                                                        Non-Academic Staff
+                                                    </a>
+                                                    <!--<a class="dropdown-item" href="non-academic-staff.php" style="color: #ff9900; font-weight: bold;">-->
+                                                    <!-- Non-Academic Staff -->
+                                                    <!--</a>-->
+
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <a class="text-white" href="#">Students</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-white" href="#">Alumni</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-white" href="#">Transcript</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-white" href="#">Giving/Donations</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-white" href="make-payment.html">Making Payments</a>
+                                    </li>
+
+
+
+
+
+                                    <!--   <li>
+                                        <div class="dropdown show">
+                                        <a class="btn bt-secondary dropdown-toggle" style="background: #2c724f; color: #fff;" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Tetfund Interventions
+                                        </a>
+
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <a class="dropdown-item" href="#">Action
+
+                                          </a>
+                                          <a class="dropdown-item" href="#">Another action</a>
+
+                                        </div>
+                                      </div>
+                                      </li>
+                       -->
+
+                                    <li>
+                                        <div class="dropdown show">
+                                            <button class="btn bt-primary dropdown-toggle" style="background: #2c724f; color: #fff;"  id="dropdownMenuLink trigger"
+                                                    data-toggle="dropdown" aria-expanded="false">
+                                                <span onclick="location.href='tetfund-intervention/index.html';">Tetfund Interv</span><span id="trigger1" onmouseover="change()">entions </span>
+                                            </button>
+
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background: #202c45; ">
+
+                                                <li>
+                                                    <a class="dropdown-item" href="#" onclick="location.href='tetfund-intervention/index.html';" style="color: #ff9900; font-weight: bold;"  >
+                                                        Special Intervention &raquo;
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-submenu"  style="background: #202c45; ">
+                                                        <li>
+                                                            <a class="dropdown-item" href="#" onclick="location.href='tetfund-intervention/index.html';" >Zonal Intervention</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#" onclick="location.href='tetfund-intervention/index.html';" >Disaster Recovery</a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a class="dropdown-item" href="#" onclick="location.href='tetfund-intervention/index.html';" >High Impact Intervention</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#" onclick="location.href='tetfund-intervention/index.html';" >National Research Fund</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#" style="color: #ff9900; font-weight: bold;" onclick="location.href='tetfund-intervention/index.html';" >
+                                                        Annual Intervention &raquo;
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-submenu" style="background: #202c45; ">
+                                                        <li>
+                                                            <a class="dropdown-item" href="#" onclick="location.href='tetfund-intervention/index.html';" >Academic Manuscript Development</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#" onclick="location.href='tetfund-intervention/index.html';" >Entrepreneurship</a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a class="dropdown-item" href="#" onclick="location.href='tetfund-intervention/index.html';" >Equipment Fabrication</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#" onclick="location.href='tetfund-intervention/index.html';" >Tetfund Project Maintanance</a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a class="dropdown-item" href="#" onclick="location.href='tetfund-intervention/index.html';" >Academic Research Journal</a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a class="dropdown-item" href="#" onclick="location.href='tetfund-intervention/index.html';" >ICT Support</a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a class="dropdown-item" href="#" onclick="location.href='tetfund-intervention/index.html';" >Institution Based Research</a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a class="dropdown-item" href="#" onclick="location.href='tetfund-intervention/index.html';" >Teaching Practice</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#" onclick="location.href='tetfund-intervention/index.html';" >Conference Attendance</a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a class="dropdown-item" href="#" onclick="location.href='tetfund-intervention/index.html';" >Library Development</a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a class="dropdown-item" href="#" onclick="location.href='tetfund-intervention/index.html';" >Academic Staff Training</a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a class="dropdown-item" href="#" onclick="location.href='tetfund-intervention/index.html';" >Physical Infrastructure</a>
+                                                        </li>
+
+
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <script>
+                                        function change() {
+                                            document.getElementById("trigger1").click();
+                                        }
+                                    </script>
+
+
+                                    <li>
+                                        <a class="text-white" href="#">Scholarships</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="text-white" href="https://webmail.imsu.edu.ng/">Webmail</a>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-        <div id="header-sticky" class="menu-area">
-            <div class="container">
-                <div class="second-menu">
-                    <div class="row align-items-center">
-                        <div class="col-xl-3 col-lg-3">
-                            @if(isset($setting))
-                            <div class="logo">
-                                <a href="{{ route('home') }}"><img src="{{ asset('/uploads/setting/'.$setting->logo_path) }}" alt="logo"></a>
-                            </div>
-                            @endif
-                        </div>
-
-                        <div class="col-xl-6 col-lg-6">
-                            <div class="main-menu text-right text-xl-right">
-                                <nav id="mobile-menu">
-                                    <ul>
-                                        <li class="{{ Request::path() == '/' ? 'current' : '' }}"><a href="{{ route('home') }}">{{ __('navbar_home') }}</a></li>
-                                        <li class="{{ Request::is('course*') ? 'current' : '' }}"><a href="{{ route('course') }}">{{ __('navbar_course') }}</a></li>
-                                        <li class="{{ Request::is('event*') ? 'current' : '' }}"><a href="{{ route('event') }}">{{ __('navbar_event') }}</a></li>
-                                        <li class="{{ Request::is('faq*') ? 'current' : '' }}"><a href="{{ route('faq') }}">{{ __('navbar_faqs') }}</a></li>
-                                        <li class="{{ Request::is('gallery*') ? 'current' : '' }}"><a href="{{ route('gallery') }}">{{ __('navbar_gallery') }}</a></li>
-                                        <li class="{{ Request::is('news*') ? 'current' : '' }}"><a href="{{ route('news') }}">{{ __('navbar_news') }}</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-3 col-lg-3 text-right d-none d-lg-block text-right text-xl-right">
-                            @php
-                            $application = App\Models\ApplicationSetting::status();
-                            @endphp
-                            @isset($application)
-                            <div class="login">
-                                <ul>
-                                    <li>
-                                        <div class="second-header-btn">
-                                           <a href="{{ route('application.index') }}" target="_blank" class="btn">{{ __('navbar_admission') }}</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            @endisset
-                        </div>
-
-                        <div class="col-12">
-                            <div class="mobile-menu"></div>
+        <div class="header-middle p-0 bg-lightest xs-text-center">
+            <div class="container pt-0 pb-0">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-5">
+                        <div class="widget no-border m-0">
+                            <a class="menuzord-brand flip xs-pull-center mb-15" href="index.html"><img src="images/imo_logo.png" alt=""></a>
                         </div>
                     </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div class="widget no-border sm-text-center mt-10 mb-10 m-0">
+                            <ul class="list-inline">
+                                <li><i class="fa fa-phone-square text-theme-colored font-36 mt-5 sm-display-block"></i></li>
+                                <li>
+                                    <a href="#" class="font-12 text-gray text-uppercase">Call us today!</a>
+                                    <h5 class="font-14 m-0"> +234 0000000</h5>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-3">
+                        <div class="widget no-border sm-text-center mt-10 mb-10 m-0">
+                            <ul class="list-inline">
+                                <li><i class="fa fa-envelope text-theme-colored font-36 mt-5 sm-display-block"></i></li>
+                                <li>
+                                    <a href="#" class="font-12 text-gray text-uppercase">Write us!</a>
+                                    <h5 class="font-13 text-black m-0"> <a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="bad3d4dcd5fad3d7c9cf94dfdecf94d4dd">[email&#160;protected]</a></h5>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="header-nav-wrapper navbar-scrolltofixed bg-theme-colored border-bottom-theme-color-2-1px">
+                <div class="container">
+                    <nav id="menuzord" class="menuzord bg-theme-colored pull-left flip menuzord-responsive">
+                        <ul class="menuzord-menu">
+
+
+
+
+                            <li><a href="javascript:void(0)" onclick="location.href='about-us.html'">About IMSU</a>
+                                <div class="megamenu" style="background: #202c45;">
+                                    <div class="megamenu-row">
+                                        <div class="col6">
+                                            <h4 style="font-weight: bold; color: #ff9900; font-size: 35px;" onclick="location.href='about-us.html'">About us</h4>
+                                            <p style="color: #fff;">Imo State University was established in 1981 and has since grown to become one of the leading universities in the country. The university offers a wide range of undergraduate and postgraduate programs in fields. It also has a strong research focus and is known for its commitment to academic excellence and innovation </p>
+                                        </div>
+                                        <div class="col4">
+                                            <div class="widget dark">
+                                                <h4 class="widget-title" style="font-weight: bold; color: #ff9900;" onclick="location.href='about-us.html'">About Us</h4>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="history.html">History</a></li>
+                                                    <li><a href="leadership.html">Leadership & Organisation</a></li>
+                                                    <li><a href="governing-council.html">Governing Council</a></li>
+                                                    <!--<li><a href="">Vacancies</a></li>-->
+                                                    <li><a href="#">Our Awards</a></li>
+                                                    <li><a href="mission.vision.html">Mission & Vision</a></li>
+                                                    <!--<li><a href="">The Vice-Chancellor's Vision</a></li>-->
+
+
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="javascript:void(0)">Academics</a>
+                                <div class="megamenu" style="background: #202c45;">
+                                    <div class="megamenu-row">
+                                        <div class="col3">
+                                            <h4 style="font-weight: bold; color: #ff9900; font-size: 35px;">Academics</h4>
+                                            <p style="color: #fff;">Our academic programs are rigorous and carefully modelled to prepare our students to be ahead. Our nearly 60,000 students can choose from 80 undergraduate and 110 postgraduate degree programs plus research and study opportunities across the world. That’s why Imo State University is the university of first choice and the nations pride</p>
+                                        </div>
+                                        <div class="col3">
+                                            <div class="widget dark">
+                                                <h4 class="widget-title" style="font-weight: bold; color: #ff9900;">Faculties</h4>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">Faculty of Arts</a></li>
+                                                    <li><a href="#">Faculty of Basic Medical Sciences</a></li>
+                                                    <li><a href="#">Faculty of Management Sciences</a></li>
+                                                    <li><a href="#">Faculty of Clinical Sciences</a></li>
+                                                    <li><a href="#">Faculty of Dental Sciences</a></li>
+                                                    <li><a href="#">Faculty of Education</a></li>
+
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col3">
+                                            <div class="widget dark">
+
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">Faculty of Engineering</a></li>
+                                                    <li><a href="#">Faculty of of Environmental Sciences</a></li>
+                                                    <li><a href="#">Faculty of Law</a></li>
+                                                    <li><a href="#">Faculty of Pharmacy</a></li>
+                                                    <li><a href="#">Faculty of Social Sciences</a></li>
+                                                    <li><a href="#">Faculty of Science</a></li>
+
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col3">
+                                            <div class="widget dark">
+                                                <h4 class="widget-title" style="font-weight: bold; color: #ff9900;">Institutes & Colleges</h4>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">College of Medicine</a></li>
+                                                    <li><a href="#">Distant Learning Institute</a></li>
+                                                    <li><a href="#">Institute of Continuing Education</a></li>
+
+                                                    <li><a href="#">Entrepreneurship & Skill Development Centre (ESDC)</a></li>
+                                                    <li><a href="#">Institute of Marine Studies</a></li>
+                                                    <li><a href="#">Institute Africa & Diaspora Studies</a></li>
+                                                    <li><a href="#">School of Postgraduate Studies</a></li>
+                                                    <li><a href="#">School of Foundation Studies</a></li>
+                                                    <li><a href="#">Library</a></li>
+
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+
+                            <li><a href="javascript:void(0)">Units</a>
+                                <div class="megamenu" style="background: #202c45;">
+                                    <div class="megamenu-row">
+                                        <div class="col4">
+                                            <h4 style="font-weight: bold; color: #ff9900; font-size: 35px;">Units</h4>
+                                            <p style="color: #fff;">Imo State University Units</p>
+                                        </div>
+                                        <div class="col4">
+                                            <div class="widget dark">
+                                                <h4 class="widget-title" style="font-weight: bold; color: #ff9900;">Units</h4>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">Registry</a></li>
+                                                    <li><a href="#">Bursary</a></li>
+                                                    <li><a href="#">Centre for Housing</a></li>
+                                                    <li><a href="#">Centre for Information Technology & Systems</a></li>
+                                                    <li><a href="#">Entrepreneurship & Skill Development Centre (ESDC)</a></li>
+                                                    <li><a href="#">Records</a></li>
+                                                    <li><a href="#">Quality Assurance & Servicom</a></li>
+
+
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col4">
+                                            <div class="widget dark">
+
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">Human Resource & Development Centre</a></li>
+                                                    <li><a href="#">International Relations Office</a></li>
+                                                    <li><a href="#">Works & Physical Planning</a></li>
+                                                    <li><a href="#">Student Affairs Division</a></li>
+                                                    <li><a href="#">Counselling Unit</a></li>
+                                                    <li><a href="#">Staff Club</a></li>
+                                                    <li><a href="#">Tetfund</a></li>
+
+
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li><a href="#">Research</a></li>
+
+
+
+                            <li><a href="javascript:void(0)">Resources</a>
+                                <div class="megamenu" style="background: #202c45;">
+                                    <div class="megamenu-row">
+                                        <div class="col4">
+                                            <h4 style="font-weight: bold; color: #ff9900; font-size: 35px;">Resources</h4>
+                                            <p style="color: #fff;">Useful Resources</p>
+                                        </div>
+                                        <div class="col4">
+                                            <div class="widget dark">
+                                                <h4 class="widget-title" style="font-weight: bold; color: #ff9900;">Resources</h4>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">Our Campus</a></li>
+                                                    <li><a href="#">Addresses</a></li>
+                                                    <li><a href="#">Downloads</a></li>
+                                                    <li><a href="#">Videos</a></li>
+                                                    <li><a href="#">Newsletters</a></li>
+                                                    <li><a href="#">Conferences</a></li>
+                                                    <li><a href="#">IMSU Magazines</a></li>
+
+
+
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col4">
+                                            <div class="widget dark">
+
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">Public Lectures</a></li>
+                                                    <li><a href="#">Inaugurals</a></li>
+                                                    <li><a href="#">Journals</a></li>
+                                                    <li><a href="#">Publications</a></li>
+                                                    <li><a href="#">Institutional Repository</a></li>
+
+
+
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li><a href="javascript:void(0)">Admissions</a>
+                                <div class="megamenu" style="background: #202c45;">
+                                    <div class="megamenu-row">
+                                        <div class="col6">
+                                            <h4 style="font-weight: bold; color: #ff9900; font-size: 35px;">Admissions</h4>
+                                            <p style="color: #fff;">Imo State University was established in 1981 and has since grown to become one of the leading universities in the country. The university offers a wide range of undergraduate and postgraduate programs in fields. It also has a strong research focus and is known for its commitment to academic excellence and innovation </p>
+                                        </div>
+                                        <div class="col6">
+                                            <div class="widget dark">
+                                                <h4 class="widget-title" style="font-weight: bold; color: #ff9900;">Admission</h4>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">Foundation</a></li>
+                                                    <li><a href="#">Undergraduate</a></li>
+                                                    <li><a href="#">Postgraduate</a></li>
+                                                    <li><a href="#">Distant Learning Institute</a></li>
+                                                    <li><a href="#">Institute of Continuing Education</a></li>
+
+
+
+
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+                            <li><a href="javascript:void(0)">Enterprise</a>
+                                <div class="megamenu" style="background: #202c45;">
+                                    <div class="megamenu-row">
+                                        <!-- <div class="col6">
+                                          <h4 style="font-weight: bold; color: #ff9900; font-size: 35px;">Admissions</h4>
+                                          <p style="color: #fff;">Imo State University was established in 1981 and has since grown to become one of the leading universities in the country. The university offers a wide range of undergraduate and postgraduate programs in fields. It also has a strong research focus and is known for its commitment to academic excellence and innovation </p>
+                                        </div> -->
+                                        <div class="col6">
+                                            <div class="widget dark">
+                                                <h4 class="widget-title" style="font-weight: bold; color: #ff9900;">Enterprise</h4>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">Bookshop</a></li>
+                                                    <li><a href="#">Press</a></li>
+                                                    <li><a href="#">Water</a></li>
+                                                    <li><a href="#">Pharmacy</a></li>
+                                                    <li><a href="#">Microfinance Bank</a></li>
+
+
+
+
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+
+
+                            <li><a href="#">Campuses</a></li>
+                            <li><a href="#">E-Learning</a></li>
+                            <li><a href="#">Contact Us</a></li>
+
+
+
+
+
+
+
+
+
+                        </ul>
+                        <ul class="pull-right flip hidden-sm hidden-xs">
+                            <li>
+                                <!-- Modal: Book Now Starts -->
+                                <a class="btn btn-colored btn-flat bg-theme-color-2 text-white font-14 bs-modal-ajax-load mt-0 p-25 pr-15 pl-15" href="portal.html">Portal</a>
+                                <!-- Modal: Book Now End -->
+                            </li>
+                        </ul>
+                        <div id="top-search-bar" class="collapse">
+                            <div class="container">
+                                <form role="search" action="#" class="search_form_top" method="get">
+                                    <input type="text" placeholder="Type text and press Enter..." name="s" class="form-control" autocomplete="off">
+                                    <span class="search-close"><i class="fa fa-search"></i></span>
+                                </form>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
     </header>
-    <!-- header-end -->
+
+
+    <style type="text/css">
+        .list-unstyled li a{
+            line-height: 11px;
+
+        }
+
+        .list-unstyled li a:hover{
+            background: #ff9900;
+            font-weight: bold;
+
+        }
+
+        .list-unstyled li a:link{
+            color: #fff;
+            line-height: 11px;
+
+        }
+        .dropdown-menu  li a{
+            color: #fff;
+        }
+        .dropdown-submenu  li a{
+            color: #fff;
+        }
+
+
+
+
+    </style>
+
+
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+
+    </script>
+
+
+
+    {{--    End Inc Header--}}
 
 
     <!-- Content Start -->
