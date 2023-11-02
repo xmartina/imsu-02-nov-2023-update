@@ -84,3 +84,24 @@
 .foot-nav li{
     cursor: pointer;
 }
+.slider-active .slick-arrow {
+    position: absolute;
+    top: 28%;
+    transform: translateY(-50%);
+    left: 5%;
+    color: #00163b;
+    font-size: 26px;
+    line-height: 60px;
+    border: none;
+    text-align: center;
+    z-index: 9;
+    cursor: pointer;
+    padding: 0;
+    background: none;
+    transition: .5s;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    box-shadow: 1px 1.732px 60px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
