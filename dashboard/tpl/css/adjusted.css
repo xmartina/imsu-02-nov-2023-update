@@ -41,8 +41,16 @@
     max-height: 90px;
 }
 .icon-cal span{
-    font-size: 10px ;
+    font-size: 12px ;
+    padding-right: 10px;
+}
+.icon-cal{
+    padding: 3px;
+    color: #fff;
+    background-color: #0a0b11;
+    border-radius: 2px;
 }
 .call-text-header {
     font-size: 11px;
+    line-height:.8;
 }
