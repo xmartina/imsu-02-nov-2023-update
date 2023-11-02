@@ -175,9 +175,9 @@
                         <div class="offset-5 col-xl-4 col-lg-4">
                             <div class="row justify-content-between align-items-center">
                                 <div class="header-call d-flex align-items-center justify-content-around ">
-                                    <div class="icon-cal"><span class="material-symbols-outlined">call</span>
+                                    <div class="icon-cal "><span class="material-symbols-outlined">call</span>
                                     </div>
-                                    <div class="call-text">
+                                    <div class="call-text-header">
                                         CALL US TODAY!<br />
                                         @isset($topbarSetting->phone)
                                             <a href="tel:{{ str_replace(' ', '', $topbarSetting->phone ?? '') }}">{{ $topbarSetting->phone ?? '' }}</a>

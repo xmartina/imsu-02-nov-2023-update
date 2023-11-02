@@ -38,4 +38,6 @@
 }
 .header-call {
     font-size: 13px !important;
+    max-width: 150px;
+    max-height: 34px;
 }
