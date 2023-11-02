@@ -197,20 +197,20 @@
                     </div>
 
                     <div class="offset-5 col-xl-4 col-lg-4 d-flex justify-content-between align-items-center">
-                        <div class="header-call d-flex align-items-center justify-content-around ">
+                        <div class="header-call d-flex align-items-center justify-content-evenly ">
                             <div class="icon-cal d-flex bg-dark rounded justify-content-center align-items-center text-white p-1 mr-3"><span class="material-symbols-outlined">call</span>
                             </div>
-                            <div class="call-text-header ">
+                            <div class="pl-3 call-text-header ">
                                 CALL US TODAY!<br/>
                                 @isset($topbarSetting->phone)
                                     <a href="tel:{{ str_replace(' ', '', $topbarSetting->phone ?? '') }}">{{ $topbarSetting->phone ?? '' }}</a>
                                 @endisset
                             </div>
                         </div>
-                        <div class="header-call d-flex align-items-center justify-content-around ">
+                        <div class="header-call d-flex align-items-center justify-content-evenly ">
                             <div class="icon-cal d-flex bg-dark rounded justify-content-center align-items-center text-white p-1 mr-3"><span class="material-symbols-outlined">mail</span>
                             </div>
-                            <div class="call-text-header ">
+                            <div class="pl-3 call-text-header ">
                                 WRITE US!<br/>
                                 @isset($topbarSetting->email)
                                     <a href="tel:{{ str_replace(' ', '', $topbarSetting->email ?? '') }}">{{ $topbarSetting->email ?? '' }}</a>
