@@ -94,7 +94,7 @@
 
                     <div class="col-lg-10 col-md-10 d-none d-lg-block text-right">
                         <div class="header-cta align-items-center">
-                            <ul class="pl-2 d-flex align-items-center">
+                            <ul class="pl-3 d-flex align-items-center">
                                <li class="mega cursor-pointer d-flex align-items-center justify-content-between"> Staff <span class="ml-2 material-symbols-outlined">expand_more</span>
                                    <ul class="d-none">
                                        <li class="child">Academic Staff </li>
