@@ -1396,7 +1396,7 @@ margin-bottom: 15px;
 .down-arrow:hover{color: #fff;}
 .slider-active .slick-arrow {
     position: absolute;
-    top: 25%;
+    top: 45%;
     transform: translateY(-50%);
     left: 5%;
     color: #00163b;

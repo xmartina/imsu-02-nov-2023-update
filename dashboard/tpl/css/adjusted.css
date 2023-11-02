@@ -84,3 +84,10 @@
 .foot-nav li{
     cursor: pointer;
 }
+.slider-bg {
+    min-height: 458px !important;
+    background-position: center top;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
