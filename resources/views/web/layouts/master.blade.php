@@ -225,7 +225,7 @@
                         <div class="mobile-menu"></div>
                     </div>
                 </div>
-                <div class="row align-items-center">
+                <div class="row align-items-center foot-nav py-3">
                     <div class="col-xl-9 col-lg-9">
                         <div class="main-menu text-right text-xl-right">
                             <nav id="mobile-menu">
