@@ -69,14 +69,7 @@
     font-size: 13px;
     font-weight: 200;
 }
-.second-header-btn .btn {
-    background: #202C45 !important;
-    font-size: 16px;
-    color: #fff;
-    border-radius: 0;
-}
 .second-header-btn .btn:hover {
-    background: #fff;
-    color:#202C45 !important;
+    color:#fff !important;
     border-radius: 0;
 }
