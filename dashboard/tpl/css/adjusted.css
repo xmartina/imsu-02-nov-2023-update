@@ -40,6 +40,9 @@
     font-size: 13px !important;
     max-height: 90px;
 }
+.icon-cal span{
+    font-size: 10px ;
+}
 .call-text-header {
     font-size: 11px;
 }

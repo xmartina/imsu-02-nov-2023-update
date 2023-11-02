@@ -198,7 +198,7 @@
 
                     <div class="offset-5 col-xl-4 col-lg-4 d-flex justify-content-between align-items-center">
                         <div class="header-call d-flex align-items-center justify-content-around ">
-                            <div class="icon-cal "><span class="material-symbols-outlined">call</span>
+                            <div class="icon-cal "><span class="material-symbols-outlined pr-3">call</span>
                             </div>
                             <div class="call-text-header ">
                                 CALL US TODAY!<br/>
@@ -208,12 +208,12 @@
                             </div>
                         </div>
                         <div class="header-call d-flex align-items-center justify-content-around ">
-                            <div class="icon-cal "><span class="material-symbols-outlined">call</span>
+                            <div class="icon-cal "><span class="material-symbols-outlined pr-3">call</span>
                             </div>
                             <div class="call-text-header ">
                                 CALL US TODAY!<br/>
-                                @isset($topbarSetting->phone)
-                                    <a href="tel:{{ str_replace(' ', '', $topbarSetting->phone ?? '') }}">{{ $topbarSetting->phone ?? '' }}</a>
+                                @isset($topbarSetting->email)
+                                    <a href="tel:{{ str_replace(' ', '', $topbarSetting->email ?? '') }}">{{ $topbarSetting->email ?? '' }}</a>
                                 @endisset
                             </div>
                         </div>
