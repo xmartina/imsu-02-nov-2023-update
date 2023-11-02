@@ -12,3 +12,12 @@
     left: -25px;
     transform: skew(30deg);
 }
+.second-header {
+    border: none;
+    padding-bottom: 6px;
+    background: #2c724f;
+    padding-top: 6px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
