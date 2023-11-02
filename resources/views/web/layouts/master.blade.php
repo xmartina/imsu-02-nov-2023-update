@@ -172,7 +172,7 @@
                             @endif
                         </div>
 
-                        <div class="col-xl-9 col-lg-9">
+                        <div class="offset-5 col-xl-4 col-lg-4">
                             <div class="row justify-content-between align-items-center">
                                 <div class="header-call">
                                     <div class="row">
