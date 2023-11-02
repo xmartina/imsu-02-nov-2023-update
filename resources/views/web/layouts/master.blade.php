@@ -43,6 +43,9 @@
     <link rel="stylesheet" href="{{ asset('web/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('web/css/responsive.css') }}">
 
+{{--     Adjusted Import--}}
+    <link rel="stylesheet" href="{{ asset('dashboard/tpl/css/adjusted.css') }}">
+
 
     @php
     $version = App\Models\Language::version();
@@ -61,7 +64,7 @@
             <div class="container">
                 <div class="row align-items-center">
 
-                    <div class="col-lg-4 col-md-4 d-none d-lg-block ">
+                    <div class="col-lg-3 col-md-3 d-none d-lg-block ">
                         @if(isset($topbarSetting) && $topbarSetting->social_status == 1)
                         <div class="header-social">
                             <span>
