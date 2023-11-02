@@ -2,15 +2,12 @@
     background: #2c724f !important;
 }
 .second-header::before {
+    font-size: 13px;
     content: "";
     height: 100%;
     position: absolute;
     width: 32%;
     background: transparent;
-    top: 0;
-    z-index: -1;
-    left: -25px;
-    transform: skew(30deg);
 }
 .second-header {
     border: none;
