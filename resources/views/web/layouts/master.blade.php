@@ -259,8 +259,9 @@
                                 <ul>
                                     <li>
                                         <div class="second-header-btn">
-                                            <a href="{{ route('application.index') }}" target="_blank"
-                                               class="btn">{{ __('navbar_admission') }}</a>
+{{--                                            <a href="{{ route('application.index') }}" target="_blank"--}}
+{{--                                               class="btn">{{ __('navbar_admission') }}</a>--}}
+                                            <div class="btn cursor-pointer">Portal</div>
                                         </div>
                                     </li>
                                 </ul>
