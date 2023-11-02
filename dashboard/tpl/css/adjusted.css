@@ -32,3 +32,7 @@
     font-size: 13px;
     font-weight: 300;
 }
+.header-cta li a:hover{
+    text-decoration: underline!important;
+    font-weight: 700;
+}
