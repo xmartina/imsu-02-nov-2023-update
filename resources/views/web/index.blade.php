@@ -517,7 +517,7 @@
                         $(document).ready(function (e) {
                             var revapi = $(".rev_slider").revolution({
                                 sliderType: "standard",
-                                jsFileLocation: "{{asset ('dashboard/tpl/js/revolution-slider/js/')}}",
+                                jsFileLocation: "dashboard/tpl/js/revolution-slider/js/",
                                 sliderLayout: "auto",
                                 dottedOverlay: "none",
                                 delay: 7000,
