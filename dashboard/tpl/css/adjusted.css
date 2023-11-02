@@ -2,19 +2,13 @@
     background: #2c724f !important;
 }
 .second-header::before {
-    font-size: 13px;
-    content: "";
-    height: 100%;
-    position: absolute;
-    width: 32%;
     background: transparent;
 }
 .second-header {
-    border: none;
     padding-bottom: 6px;
     background: #2c724f;
     padding-top: 6px;
-    color: #fff;
-    position: relative;
-    z-index: 1;
+}
+.header-social a {
+    font-size: 13px;
 }
