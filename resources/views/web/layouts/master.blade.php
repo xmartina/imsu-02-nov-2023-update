@@ -177,7 +177,7 @@
                                 <div class="header-call d-flex align-items-center justify-content-around ">
                                     <div class="icon-cal "><span class="material-symbols-outlined">call</span>
                                     </div>
-                                    <div class="call-text-header">
+                                    <div class="call-text-header ">
                                         CALL US TODAY!<br />
                                         @isset($topbarSetting->phone)
                                             <a href="tel:{{ str_replace(' ', '', $topbarSetting->phone ?? '') }}">{{ $topbarSetting->phone ?? '' }}</a>
