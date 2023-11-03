@@ -705,9 +705,7 @@
                                     Profile</a>
                             </div>
                         </div>
-                        <!--  <div class="about-page-img-holder">
-                             <img src="img/about/2.jpg" class="img-responsive" alt="about">
-                         </div> -->
+
                     </div>
                 </div>
             </div>
@@ -721,22 +719,6 @@ Pricing -->
                  data-parallax-ratio="0.7">
             <div class="container">
                 <div class="row">
-                    <!--  <div class="col-md-4 pb-4 pb-md-0" style="margin-right: -20px;">
-                       <div class="pricing" style="background: #ff9900; opacity: 0.7; border-radius: 15px;">
-                         <div class="counter">
-                         <div class="counter-icon">
-
-                         </div>
-                         <div class="counter-content">
-                           <span class="timer" data-to="1000" data-speed="10000" style="color: #ffffff; padding: 20px;">40k +</span>
-                           <label style="color: #ffffff; padding: 20px; margin-top: -20px;">Students</label>
-                         </div>
-                       </div>
-
-                       </div>
-
-                     </div> -->
-
 
                     <div class="col-md-4 pb-4 pb-md-0" style="margin-right: -20px;">
                         <div class="pricing active" style="background: #ff9900; opacity: 0.7; border-radius: 15px;">
@@ -777,19 +759,6 @@ Pricing -->
                             </div>
                         </div>
                     </div>
-
-                    <!--  <div class="col-md-3 pb-4 pb-md-0">
-                       <div class="pricing active" style="background: #202c45; opacity: 0.7; border-radius: 15px;">
-                           <div class="counter">
-                             <div class="counter-icon">
-                         </div>
-                             <div class="counter-content">
-                               <span class="timer" data-to="200000" data-speed="10000" style="color: #ffffff; padding: 20px;">68 </span>
-                               <label style="color: #ffffff; padding: 20px; margin-top: -20px;">Departments</label>
-                             </div>
-                       </div>
-                       </div>
-                     </div> -->
 
 
                     <div class="col-md-3 pb-4 pb-md-0" style="margin-right: -20px;">
@@ -853,7 +822,7 @@ Pricing -->
                         <div class="col-md-3 col-sm-4 col-xs-12">
                             <div class="ed-course-in">
                                 <a class="course-overlay" href="#">
-                                    <img src="images/alum.jpg" alt="">
+                                    <img src="{{ asset('web/tpl/images/alum.jpg')}}" alt="">
                                     <span>IMSU Online Courses</span>
                                 </a>
                             </div>
@@ -861,7 +830,7 @@ Pricing -->
                         <div class="col-md-3 col-sm-4 col-xs-12">
                             <div class="ed-course-in">
                                 <a class="course-overlay" href="#">
-                                    <img src="images/aca.jpg" alt="">
+                                    <img src="{{ asset('web/tpl/images/aca.jpg')}}" alt="">
                                     <span>Programme of studies</span>
                                 </a>
                             </div>
@@ -870,7 +839,7 @@ Pricing -->
                         <div class="col-md-3 col-sm-4 col-xs-12">
                             <div class="ed-course-in">
                                 <a class="course-overlay" href="#">
-                                    <img src="images/res.jpg" alt="">
+                                    <img src="{{ asset('web/tpl/images/res.jpg')}}" alt="">
                                     <span>Research & Development</span>
                                 </a>
                             </div>
@@ -879,26 +848,16 @@ Pricing -->
                         <div class="col-md-3 col-sm-4 col-xs-12">
                             <div class="ed-course-in">
                                 <a class="course-overlay" href="#">
-                                    <img src="images/admin.jpg" alt="">
+                                    <img src="{{ asset('web/tpl/images/admin.jpg')}}" alt="">
                                     <span>Admission</span>
                                 </a>
                             </div>
                         </div>
 
-
-                        <!--  <div class="col-md-3 col-sm-4 col-xs-12">
-                             <div class="ed-course-in">
-                                 <a class="course-overlay" href="">
-                                     <img src="images/aca.jpg" alt="">
-                                     <span>Students profile</span>
-                                 </a>
-                             </div>
-                         </div> -->
-
                         <div class="col-md-3 col-sm-4 col-xs-12">
                             <div class="ed-course-in">
                                 <a class="course-overlay" href="#">
-                                    <img src="images/sch.jpg" alt="">
+                                    <img src="{{ asset('web/tpl/images/sch.jpg')}}" alt="">
                                     <span>Scholarships</span>
                                 </a>
                             </div>
@@ -907,7 +866,7 @@ Pricing -->
                         <div class="col-md-3 col-sm-4 col-xs-12">
                             <div class="ed-course-in">
                                 <a class="course-overlay" href="#">
-                                    <img src="images/aluta.jpg" alt="">
+                                    <img src="{{ asset('web/tpl/images/aluta.jpg')}}" alt="">
                                     <span>IMSU Alumni</span>
                                 </a>
                             </div>
@@ -915,7 +874,7 @@ Pricing -->
                         <div class="col-md-3 col-sm-4 col-xs-12">
                             <div class="ed-course-in">
                                 <a class="course-overlay" href="#">
-                                    <img src="images/ex.jpg" alt="">
+                                    <img src="{{ asset('web/tpl/images/ex.jpg')}}" alt="">
                                     <span>IMSU Centers</span>
                                 </a>
                             </div>
@@ -923,7 +882,7 @@ Pricing -->
                         <div class="col-md-3 col-sm-4 col-xs-12">
                             <div class="ed-course-in">
                                 <a class="course-overlay" href="#">
-                                    <img src="images/cam.jpg" alt="">
+                                    <img src="{{ asset('web/tpl/images/cam.jpg')}}" alt="">
                                     <span>Campus Life</span>
                                 </a>
                             </div>
@@ -937,7 +896,7 @@ Pricing -->
 
         <!--// Main Section \\-->
         <div class="wm-main-section wm-parallex-two-full "
-             style="background-image: url('images/graduate.jpg'); background-size: cover; margin-top: 0px;">
+             style="background-image: url('{{ asset('web/tpl/images/graduate.jpg')}}'); background-size: cover; margin-top: 0px;">
             <span class="wm-light-transparent wm-more-darke-black"></span>
             <div class="container">
                 <div class="row">
@@ -959,53 +918,6 @@ Pricing -->
         <br><br><br>
         <!--// Main Section \\-->
 
-
-        <!--// Main Section \\-->
-        <!-- <div class="wm-main-section wm-whychooseus-full">
-            <div class="container">
-                <div class="row">
-
-
-                    <div class="col-md-8">
-                        <div class="whychooseus-list">
-                            <div class="con-title">
-                <h2 style="color: #202c45; font-size: 25px;">Statistics <span style="font-size: 25px;"> Don't Lie</span></h2>
-                 <div class="text">
-                    <p style="color: black;">Find out what makes our student experience so rich, meaningful and life-changing. </p>
-                </div>
-            </div>
-                            <ul class="row">
-                                <li class="col-sm-4 col-xs-12">
-                                    <span>5409</span>
-                                    <h6>have gotten a prestigious job</h6>
-                                </li>
-                                <li class="col-md-4">
-                                    <span>43%</span>
-                                    <h6>students have established successful business</h6>
-                                </li>
-                                <li class="col-md-4">
-                                    <span>15%</span>
-                                    <h6>have already earned their first million</h6>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="wm-questions-studying">
-                            <img src="extra-images/ask-questoin-bg.png" alt="">
-                            <h3 class="wm-color">Questions about studying with us?</h3>
-                            <p>We have a team of student advisers & officers to answer any questions:</p>
-                            <a class="wm-banner-btn btn-theme-colored btn-flat  mt-10 mb-sm-30" href="#">ask us now </a>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div> -->
-        <!--// Main Section \\-->
-
-
         <!--// Main Section \\-->
         <div class="wm-main-section wm-learn-listing-full">
             <div class="container">
@@ -1023,7 +935,7 @@ Pricing -->
                         <div class="wm-learn-listing">
                             <ul class="row">
                                 <li class="col-md-4">
-                                    <figure><a href="#"><img src="images/cc3.jpg" alt=""></a>
+                                    <figure><a href="#"><img src="{{ asset('web/tpl/images/cc3.jpg')}}" alt=""></a>
                                         <figcaption>
                                             <h2>Post Graduate</h2>
                                             <a href="#" class="wm-banner-btn">Read More</a>
@@ -1031,7 +943,7 @@ Pricing -->
                                     </figure>
                                 </li>
                                 <li class="col-md-4">
-                                    <figure><a href="#"><img src="images/cc4.jpg" alt=""></a>
+                                    <figure><a href="#"><img src="{{ asset('web/tpl/images/cc4.jpg')}}" alt=""></a>
                                         <figcaption>
                                             <h2>Undergraduate</h2>
                                             <a href="#" class="wm-banner-btn">Read More</a>
@@ -1040,7 +952,7 @@ Pricing -->
                                 </li>
 
                                 <li class="col-md-4">
-                                    <figure><a href="#"><img src="images/cc1.jpg" alt=""></a>
+                                    <figure><a href="#"><img src="{{ asset('web/tpl/images/cc1.jpg')}}" alt=""></a>
                                         <figcaption>
                                             <h2>Continuing Education</h2>
                                             <a href="#" class="wm-banner-btn">Read More</a>
@@ -1048,7 +960,7 @@ Pricing -->
                                     </figure>
                                 </li>
                                 <li class="col-md-4">
-                                    <figure><a href="#"><img src="images/pre.jpg" alt=""></a>
+                                    <figure><a href="#"><img src="{{ asset('web/tpl/images/pre.jpg')}}" alt=""></a>
                                         <figcaption>
                                             <h2>Pre-degree</h2>
                                             <a href="#" class="wm-banner-btn">Read More</a>
@@ -1057,7 +969,7 @@ Pricing -->
                                 </li>
 
                                 <li class="col-md-4">
-                                    <figure><a href="#"><img src="images/cc2.jpg" alt=""></a>
+                                    <figure><a href="#"><img src="{{ asset('web/tpl/images/cc2.jpg')}}" alt=""></a>
                                         <figcaption>
                                             <h2>JUPEB</h2>
                                             <a href="#" class="wm-banner-btn">Read More</a>
@@ -1066,7 +978,7 @@ Pricing -->
                                 </li>
 
                                 <li class="col-md-4">
-                                    <figure><a href="#"><img src="images/dip.html" alt=""></a>
+                                    <figure><a href="#"><img src="{{ asset('web/tpl/images/dip.html')}}" alt=""></a>
                                         <figcaption>
                                             <h2>Diploma Programmes</h2>
                                             <a href="#" class="wm-banner-btn">Read More</a>
@@ -1080,105 +992,6 @@ Pricing -->
                 </div>
             </div>
         </div>
-        <!--// Main Section \\-->
-
-
-        <!-- Divider: Funfact -->
-        <!-- <section class="divider parallax layer-overlay overlay-theme-colored-9" data-bg-img="images/graduate.jpg" data-parallax-ratio="0.7">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-                <div class="funfact text-center">
-                  <i class="pe-7s-smile mt-5 text-theme-color-2"></i>
-                  <h2 data-animation-duration="2000" data-value="16234" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
-                  <h5 class="text-white text-uppercase mb-0">Happy Students</h5>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-                <div class="funfact text-center">
-                  <i class="pe-7s-note2 mt-5 text-theme-color-2"></i>
-                  <h2 data-animation-duration="2000" data-value="194" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
-                  <h5 class="text-white text-uppercase mb-0">Our Courses</h5>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
-                <div class="funfact text-center">
-                  <i class="pe-7s-users mt-5 text-theme-color-2"></i>
-                  <h2 data-animation-duration="2000" data-value="248" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
-                  <h5 class="text-white text-uppercase mb-0">Our Lecturers</h5>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-3 mb-md-0">
-                <div class="funfact text-center">
-                  <i class="pe-7s-cup mt-5 text-theme-color-2"></i>
-                  <h2 data-animation-duration="2000" data-value="19" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
-                  <h5 class="text-white text-uppercase mb-0">Awards Won</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> -->
-
-
-        <!--// Main Section \\-->
-        <!-- <div class="wm-main-section wm-studentslove-full">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-md-12">
-
-                        <div class="con-title">
-                <h2 style="color: #202c45; font-size: 25px;">Why Student <span style="font-size: 25px;"> Love Us</span></h2>
-                 <div class="text">
-                    <p style="color: black;">knowledge shall not be the concern of scholars alone. The uplifting of the whole people shall be its final goal</p>
-                </div>
-            </div>
-
-                       </div>
-                    <div class="col-md-6">
-
-                      <img src="images/cam.jpg" class="img-responsive" />
-
-                    </div>
-
-
-                    <div class="col-md-6">
-                        <div class="wm-recent-list-slider wm-recent-list-slider-color">
-                            <div class="wm-recent-list-layer">
-                                <figure><a href="#"><img src="images/tes-3.jpg" alt=""></a></figure>
-                                <div class="wm-recent-list-text">
-                                    <p>“Imo State University has been a great contributor to the development of my personality. I have established my leadership, time management and team skills and also have been able to advance these skills to a whole new augment .”</p>
-                                    <a href="#" class="wm-color-three">-Izu Okafor, - Filmmaker</a>
-                                </div>
-                            </div>
-                            <div class="wm-recent-list-layer">
-                                <figure><a href="#"><img src="images/tes-2.jpeg" alt=""></a></figure>
-                                <div class="wm-recent-list-text">
-                                    <p>“The professors here make the university what it is today. With an attitude of being ever ready to help, and not only delivering classroom teachings, but they are also the pillars of the learning gained from this esteemed university and this is a treasure for life.”</p>
-                                    <a href="#" class="wm-color-three">-Ugochi Precious- Enterprenuer</a>
-                                </div>
-                            </div>
-                            <div class="wm-recent-list-layer">
-                                <figure><a href="#"><img src="images/tes-1.jpeg" alt=""></a></figure>
-                                <div class="wm-recent-list-text">
-                                    <p>“ This great institution has built me to become strong and resilient toward achieving my life and personal goals. It turned me into a sustainable leader through her pattern of training and I will be forever grateful.
-”</p>
-                                    <a href="#" class="wm-color-three">-Chibundu Omoji - Brand Strategist</a>
-                                </div>
-                            </div>
-                            <div class="wm-recent-list-layer">
-                                <figure><a href="#"><img src="images/test.jpg" alt=""></a></figure>
-                                <div class="wm-recent-list-text">
-                                    <p>“Imo State University shaped my live and made me who I am today. Professor Ugonna Thanks for all you do”</p>
-                                    <a href="#" class="wm-color-three">-Mmachi Princess- Graduant</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div> -->
         <!--// Main Section \\-->
 
 
@@ -1327,7 +1140,7 @@ Pricing -->
                             <div class="row">
                                 <div class="col-4">
                                     <div class="sec-img-wrapper">
-                                        <img src="images/alum.jpg">
+                                        <img src="{{ asset('web/tpl/images/alum.jpg')}}">
                                     </div>
                                 </div>
                                 <div class="col-8">
@@ -1345,7 +1158,7 @@ Pricing -->
                             <div class="row">
                                 <div class="col-4">
                                     <div class="sec-img-wrapper">
-                                        <img src="images/t_bg.jpg">
+                                        <img src="{{ asset('web/tpl/images/t_bg.jpg')}}">
                                     </div>
                                 </div>
                                 <div class="col-8">
@@ -1363,7 +1176,7 @@ Pricing -->
                             <div class="row">
                                 <div class="col-4">
                                     <div class="sec-img-wrapper">
-                                        <img src="images/aca.jpg">
+                                        <img src="{{ asset('web/tpl/images/aca.jpg')}}">
                                     </div>
                                 </div>
                                 <div class="col-8">
@@ -1427,7 +1240,7 @@ Pricing -->
                             <div class="row">
                                 <div class="col-4">
                                     <div class="sec-img-wrapper">
-                                        <img src="images/event/1.jpg">
+                                        <img src="{{ asset('web/tpl/images/event/1.jpg')}}">
                                     </div>
                                 </div>
                                 <div class="col-8">
@@ -1443,7 +1256,7 @@ Pricing -->
                             <div class="row">
                                 <div class="col-4">
                                     <div class="sec-img-wrapper">
-                                        <img src="images/event/3.jpg">
+                                        <img src="{{ asset('web/tpl/images/event/3.jpg')}}">
                                     </div>
                                 </div>
                                 <div class="col-8">
@@ -1461,7 +1274,7 @@ Pricing -->
                             <div class="row">
                                 <div class="col-4">
                                     <div class="sec-img-wrapper">
-                                        <img src="images/event/2.jpg">
+                                        <img src="{{ asset('web/tpl/images/event/2.jpg')}}">
                                     </div>
                                 </div>
                                 <div class="col-8">
@@ -1480,10 +1293,6 @@ Pricing -->
         </section>
 
     </div>
-
-
-
-
 
     <!-- main-area-end -->
 
