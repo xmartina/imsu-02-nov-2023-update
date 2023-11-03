@@ -11,7 +11,12 @@
 
 {{--    check for course registration--}}
 <!-- Modal Structure -->
-<div class="modal" id="pinRegistrationModal" @if($isPinReg === 2) style="display: block;" @endif>
+<style>
+    .modal{
+        background-color: #fff;
+    }
+</style>
+<div class="modal h-100 w-100" id="pinRegistrationModal" @if($isPinReg === 2) style="display: block;" @endif>
     <div class="modal-header">
         <h5 class="modal-title">This modal cannot be closed.</h5>
     </div>
