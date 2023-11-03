@@ -56,6 +56,67 @@ class DashboardController extends Controller
             }
         }
 
+        //Course form reg
+        if(isset($enroll) && isset($session)){
+            // Get the student's pin registration status.
+            $isPinReg = Student::where('id', $student_id)->first()->is_pin_reg;
+
+            // Display different content to students depending on their pin registration status.
+            // Check if the pin registration status is 1.
+            if ($isPinReg === 1) {
+                null;
+            } else if ($isPinReg === 2) { ?>
+<script>
+    // Create a new modal element.
+    const modal = document.createElement('div');
+    modal.classList.add('modal');
+
+    // Create a modal header.
+    const modalHeader = document.createElement('div');
+    modalHeader.classList.add('modal-header');
+    modalHeader.textContent = 'This modal cannot be closed.';
+
+    // Create a modal body.
+    const modalBody = document.createElement('div');
+    modalBody.classList.add('modal-body');
+    modalBody.textContent = 'This is the modal body.';
+
+    // Create a modal footer.
+    const modalFooter = document.createElement('div');
+    modalFooter.classList.add('modal-footer');
+
+    // Create a close button.
+    const closeButton = document.createElement('button');
+    closeButton.classList.add('btn');
+    closeButton.classList.add('btn-primary');
+    closeButton.textContent = 'Close';
+
+    // Prevent the close button from closing the modal.
+    closeButton.addEventListener('click', function(event) {
+        event.preventDefault();
+    });
+
+    // Append the modal header, body, and footer to the modal element.
+    modal.appendChild(modalHeader);
+    modal.appendChild(modalBody);
+    modal.appendChild(modalFooter);
+
+    // Append the close button to the modal footer.
+    modalFooter.appendChild(closeButton);
+
+    // Append the modal element to the body element.
+
+    document.body.appendChild(modal);
+
+    // Show the modal.
+    modal.classList.add('show');
+</script>
+<?php
+                // Run code if the pin registration status is 2.
+            } else {
+               echo 'Error';
+            }
+        }
 
         // Assignments
         if(isset($enroll) && isset($session) && isset($semester)){
