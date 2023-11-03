@@ -843,12 +843,22 @@
             <ul class="pcoded-submenu">
 
                 @can('social-setting-view')
-                    <h2 class="text-muted">**** start new blocks ***</h2>
+                    <h6 class="text-muted pt-5">** start new blocks **</h6>
                     <li class="{{ Request::is('admin/web/social-setting*') ? 'active' : '' }}">
 {{--                        <a href="{{ route('admin.social-setting.index') }}" class="">--}}
                         <a href="" class="">
 {{--                            {{ trans_choice('module_social_setting', 1) }}--}}
                             Edit Home Page
+                        </a>
+                    </li>
+                @endcan
+                @can('social-setting-view')
+                    <h6 class="text-muted pb-5">** end new blocks **</h6>
+                    <li class="{{ Request::is('admin/web/social-setting*') ? 'active' : '' }}">
+                        {{--                        <a href="{{ route('admin.social-setting.index') }}" class="">--}}
+                        <a href="" class="">
+                            {{--                            {{ trans_choice('module_social_setting', 1) }}--}}
+                            Edit Home Footer
                         </a>
                     </li>
                 @endcan
