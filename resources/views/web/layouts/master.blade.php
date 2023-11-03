@@ -45,6 +45,7 @@
 
     {{--    New template Setting--}}
     <!-- Stylesheet -->
+    <link href="{{ asset('web/tpl/css/google-import.css')}}" rel="stylesheet" type="text/css">
     <link href="{{ asset('web/tpl/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{ asset('web/tpl/css/jquery-ui.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{ asset('web/tpl/css/animate.css')}}" rel="stylesheet" type="text/css">
