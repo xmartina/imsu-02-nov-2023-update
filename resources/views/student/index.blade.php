@@ -14,9 +14,15 @@
 <style>
     .modal{
         background-color: #fff;
+        max-width: 500px;
+    }
+    @media (max-width:769px) {
+        .modal{
+            max-width: 98%;
+        }
     }
 </style>
-<div class="modal h-100 w-100" id="pinRegistrationModal" @if($isPinReg === 2) style="display: block;" @endif>
+<div class="modal h-100 mx-auto" id="pinRegistrationModal" @if($isPinReg === 2) style="display: block;" @endif>
     <div class="modal-header">
         <h5 class="modal-title">This modal cannot be closed.</h5>
     </div>
