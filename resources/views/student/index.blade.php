@@ -8,6 +8,37 @@
 
 @section('content')
 
+
+{{--    check for course registration--}}
+<!-- Modal Structure -->
+<div class="modal" id="pinRegistrationModal" @if($isPinReg === 2) style="display: block;" @endif>
+    <div class="modal-header">
+        <h5 class="modal-title">This modal cannot be closed.</h5>
+    </div>
+    <div class="modal-body">
+        <p>This is the modal body.</p>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" id="closeModal">Close</button>
+    </div>
+</div>
+
+<script>
+    @if($isPinReg === 2)
+    // Show the modal if isPinReg is 2.
+    document.getElementById('pinRegistrationModal').classList.add('show');
+
+    // Prevent the close button from closing the modal.
+    document.getElementById('closeModal').addEventListener('click', function(event) {
+        event.preventDefault();
+    });
+    @endif
+</script>
+
+
+{{--    end check course reg--}}
+
+
 <!-- Start Content-->
 <div class="main-body">
     <div class="page-wrapper">
@@ -90,10 +121,10 @@
                                         <td>{{ $row->category->title ?? '' }}</td>
                                         <td>
                                             @if(isset($setting->decimal_place))
-                                            {{ number_format((float)$row->fee_amount, $setting->decimal_place, '.', '') }} 
+                                            {{ number_format((float)$row->fee_amount, $setting->decimal_place, '.', '') }}
                                             @else
-                                            {{ number_format((float)$row->fee_amount, 2, '.', '') }} 
-                                            @endif 
+                                            {{ number_format((float)$row->fee_amount, 2, '.', '') }}
+                                            @endif
                                             {!! $setting->currency_symbol !!}
                                         </td>
                                         <td>
@@ -172,7 +203,7 @@
             @endif
 
         </div>
- 
+
         <div class="row">
             <div class="col-xl-8 col-md-8 col-sm-12">
                 <div class="card">
@@ -210,7 +241,7 @@
                             @endif
 
                             @if($latest_event->start_date != $latest_event->end_date)
-                             <i class="fas fa-exchange-alt"></i> 
+                             <i class="fas fa-exchange-alt"></i>
                             @if(isset($setting->date_format))
                             {{ date($setting->date_format, strtotime($latest_event->end_date)) }}
                             @else
