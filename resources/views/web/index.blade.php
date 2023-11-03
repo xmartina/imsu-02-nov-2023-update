@@ -1,27 +1,6 @@
 @extends('web.layouts.master')
 @section('title', __('navbar_home'))
 
-@section('social_meta_tags')
-    @if(isset($setting))
-        <meta property="og:type" content="website">
-        <meta property='og:site_name' content="{{ $setting->title }}"/>
-        <meta property='og:title' content="{{ $setting->title }}"/>
-        <meta property='og:description'
-              content="{!! str_limit(strip_tags($setting->meta_description), 160, ' ...') !!}"/>
-        <meta property='og:url' content="{{ route('home') }}"/>
-        <meta property='og:image' content="{{ asset('/uploads/setting/'.$setting->logo_path) }}"/>
-
-
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:site" content="{!! '@'.str_replace(' ', '', $setting->title) !!}"/>
-        <meta name="twitter:creator" content="@HiTechParks"/>
-        <meta name="twitter:url" content="{{ route('home') }}"/>
-        <meta name="twitter:title" content="{{ $setting->title }}"/>
-        <meta name="twitter:description"
-              content="{!! str_limit(strip_tags($setting->meta_description), 160, ' ...') !!}"/>
-        <meta name="twitter:image" content="{{ asset('/uploads/setting/'.$setting->logo_path) }}"/>
-    @endif
-@endsection
 
 @section('content')
 
