@@ -22,20 +22,20 @@
         }
     }
 </style>
-<div class="modal h-100 mx-auto" id="pinRegistrationModal" @if($isPinReg === 2) style="display: block;" @endif>
+<div class="modal h-100 mx-auto" id="pinRegistrationModal" @if($isPinReg !== 1) style="display: block;" @endif>
     <div class="modal-header">
-        <h5 class="modal-title">This modal cannot be closed.</h5>
+        <h5 class="modal-title">you first need to pay for your course registration before you can access your account</h5>
     </div>
     <div class="modal-body">
-        <p>This is the modal body.</p>
+        <p>use the form below to pay</p>
     </div>
-    <div class="modal-footer">
-        <button class="btn btn-primary" id="closeModal">Close</button>
-    </div>
+{{--    <div class="modal-footer">--}}
+{{--        <button class="btn btn-primary" id="closeModal">Close</button>--}}
+{{--    </div>--}}
 </div>
 
 <script>
-    @if($isPinReg === 2)
+    @if($isPinReg !== 1)
     // Show the modal if isPinReg is 2.
     document.getElementById('pinRegistrationModal').classList.add('show');
 
