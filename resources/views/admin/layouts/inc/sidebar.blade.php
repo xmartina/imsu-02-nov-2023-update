@@ -843,7 +843,7 @@
             <ul class="pcoded-submenu">
 
                 @can('social-setting-view')
-                    <h6 class="text-muted pt-5">** start new blocks **</h6>
+                    <h6 class="text-muted pt-5 text-center">** start new blocks **</h6>
                     <li class="{{ Request::is('admin/web/social-setting*') ? 'active' : '' }}">
 {{--                        <a href="{{ route('admin.social-setting.index') }}" class="">--}}
                         <a href="" class="">
@@ -853,7 +853,7 @@
                     </li>
                 @endcan
                 @can('social-setting-view')
-                    <h6 class="text-muted pb-5">** end new blocks **</h6>
+                    <h6 class="text-muted pb-5 text-center">** end new blocks **</h6>
                     <li class="{{ Request::is('admin/web/social-setting*') ? 'active' : '' }}">
                         {{--                        <a href="{{ route('admin.social-setting.index') }}" class="">--}}
                         <a href="" class="">
