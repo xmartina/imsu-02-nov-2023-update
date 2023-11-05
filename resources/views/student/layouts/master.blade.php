@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    
+
      @include('student.layouts.common.header_script')
 
 </head>
 
-<body>
+<body @if($isPinReg === 2) class="course-reg-check" @endif>
 
     <!-- [ Pre-loader ] start -->
     <div class="loader-bg">
@@ -74,8 +74,8 @@
                 <li>
                     <div class="dropdown">
                         <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
-                            @php 
-                            $version = App\Models\Language::version(); 
+                            @php
+                            $version = App\Models\Language::version();
                             @endphp
                             <i class="fas fa-language"></i> {{ $version->name }}
                         </a>
@@ -166,7 +166,7 @@
                                 <a href="javascript:void(0);" class="dud-logout" href="{{ route('student.logout') }}"
                                    onclick="event.preventDefault();
                                                  document.getElementById('logout-form').submit();">
-                                    
+
                                     <i class="feather icon-log-out"></i>
                                 </a>
 
@@ -218,20 +218,20 @@
             <div class="main-chat-cont scroll-div">
                 <div class="main-friend-chat">
                     <div class="media chat-messages">
-                        
+
                         <div class="media-body chat-menu-content">
-                            
+
                         </div>
                     </div>
                     <div class="media chat-messages">
                         <div class="media-body chat-menu-reply">
-                            
+
                         </div>
                     </div>
                     <div class="media chat-messages">
-                        
+
                         <div class="media-body chat-menu-content">
-                            
+
                         </div>
                     </div>
                 </div>
@@ -246,12 +246,12 @@
         <div class="pcoded-wrapper">
             <div class="pcoded-content">
                 <div class="pcoded-inner-content">
-                    
+
                     <!-- start page title -->
                     <!-- Include page breadcrumb -->
                     @include('student.layouts.inc.breadcrumb')
                     <!-- end page title -->
-                    
+
 
                     <!-- Start Content-->
                     @yield('content')
