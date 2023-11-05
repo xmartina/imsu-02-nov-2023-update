@@ -17,7 +17,7 @@
     <!-- [ Pre-loader ] End -->
 
     <!-- [ navigation menu ] start -->
-    <nav id="addFilterNoCourse" class="pcoded-navbar active-lightblue title-lightblue navbar-lightblue brand-lightblue navbar-image-4 menu-item-icon-style2 {{\Cookie::get('sidebar')}}">
+    <nav id="addFilterNoCourse" class="@if($isPinReg === 2) course-reg-check  @endif pcoded-navbar active-lightblue title-lightblue navbar-lightblue brand-lightblue navbar-image-4 menu-item-icon-style2 {{\Cookie::get('sidebar')}}">
         <div class="navbar-wrapper">
             <div class="navbar-brand header-logo">
                 @if(isset($setting))
