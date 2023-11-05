@@ -31,7 +31,7 @@
         <!-- toastr css -->
         <link rel="stylesheet" href="{{ asset('dashboard/plugins/toastr/css/toastr.min.css') }}">
 
-        
+
         <!-- page css -->
         @yield('page_css')
 
@@ -39,10 +39,11 @@
         <!-- vendor css -->
         <link rel="stylesheet" href="{{ asset('dashboard/css/style.css') }}">
 
-        @php 
-        $version = App\Models\Language::version(); 
+        @php
+        $version = App\Models\Language::version();
         @endphp
         @if($version->direction == 1)
         <!-- RTL css -->
         <link rel="stylesheet" class="rtl-css" href="{{ asset('dashboard/css/layouts/rtl.css') }}">
         @endif
+        <link rel="stylesheet" href="{{ asset('dashboard/css/adjustment.css') }}">
