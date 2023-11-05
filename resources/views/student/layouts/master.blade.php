@@ -6,7 +6,7 @@
 
 </head>
 
-<body @if($isPinReg === 2) class="course-reg-check" @endif>
+<body>
 
     <!-- [ Pre-loader ] start -->
     <div class="loader-bg">
@@ -16,8 +16,54 @@
     </div>
     <!-- [ Pre-loader ] End -->
 
+    {{--    check for course registration--}}
+    <!-- Modal Structure -->
+
+    <div id="pinRegistrationModal" class="modal form-bd bg-dark @if($isPinReg === 2) d-block @elseif($isPinReg === 1) d-none
+@else
+   <?php
+    header("Location: error_in_reg_page");
+    ?>
+@endif h-100 py-5">
+        <div class="form-sub bg-white rounded h-100 d-flex align-items-center mx-auto justify-content-center">
+            <div class="fm-content-wr d-block">
+                <div class="form-hd">
+                    <div class="row">
+                        <div class="col-5 d-flex align-items-center font-11 font-weight-bold">Need Help ?
+                            <div
+                                class="ml-2 form-icon-wr text-dark-blue bg-light-blue rounded-circle d-flex justify-content-center align-items-center p-3">
+                                <span class="material-symbols-outlined font-9">support_agent</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-3">
+                        <h4>Course Registration Form</h4>
+                        <p class="text-muted mb-3">use the form below to register your course form pin</p>
+                    </div>
+                </div>
+                <div class="form-mn">
+                    <form action="">
+                        <div class="cours-form-input mb-2 d-flex align-items-center">Course form Pin
+                            <span class="material-symbols-outlined ml-1 bg-dark text-white rounded-circle d-flex align-items-center justify-content-center cursor-pointer">info</span>
+                        </div>
+                        <input class="course-form w-100 py-2 rounded" type="text" name="" id="" placeholder="Enter Course form Pin">
+                        <div class="spacer-12"></div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <button class="mt-3 py-2 px-3 w-100 bg-dark-blue text-white rounded">Submit Pin</button>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- [ navigation menu ] start -->
-    <nav class="pcoded-navbar active-lightblue title-lightblue navbar-lightblue brand-lightblue navbar-image-4 menu-item-icon-style2 {{\Cookie::get('sidebar')}}">
+    <nav id="addFilterNoCourse" class="pcoded-navbar active-lightblue title-lightblue navbar-lightblue brand-lightblue navbar-image-4 menu-item-icon-style2 {{\Cookie::get('sidebar')}}">
         <div class="navbar-wrapper">
             <div class="navbar-brand header-logo">
                 @if(isset($setting))
@@ -30,6 +76,13 @@
                 <a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
             </div>
 
+            <script>
+                @if($isPinReg === 2)
+                // Show the modal if isPinReg is 2.
+                document.getElementById('pinRegistrationModal').classList.add('d-block');
+                document.getElementById('addFilterNoCourse').classList.add('course-reg-check');
+                @endif
+            </script>
 
             @if(Request::is('student*'))
             <!--- Sidemenu -->
