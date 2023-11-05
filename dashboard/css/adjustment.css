@@ -26,7 +26,8 @@
     height: 70vh!important;
     width: 100%;
     background-size: cover;
-    position: absolute;
+    position: sticky;
+    top:50px;
 }
 .cursor-pointer{
     cursor: pointer;
