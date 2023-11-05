@@ -11,7 +11,7 @@
     {{--    check for course registration--}}
     <!-- Modal Structure -->
 
-    <div id="pinRegistrationModal" class="modal form-bd bg-dark @if($isPinReg === 2) d-block @elseif($isPinReg === 1) d-none
+    <div id="pinRegistrationModal" class="modal rounded form-bd bg-dark @if($isPinReg === 2) d-block @elseif($isPinReg === 1) d-none
 @else
    <?php
     header("Location: error_in_reg_page");
