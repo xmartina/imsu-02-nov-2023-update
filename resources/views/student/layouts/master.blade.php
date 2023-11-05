@@ -8,18 +8,19 @@
     <script>
         @if($isPinReg === 2)
 
-        // Get all anchor elements within a <nav> element
-        var navElement = document.querySelector('nav'); // Change 'nav' to match the actual selector for your <nav> element
-        var anchorElements = navElement.querySelectorAll('a');
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all anchor elements within a <nav> element
+            var navElement = document.querySelector('nav'); // Change 'nav' to match the actual selector for your <nav> element
+            var anchorElements = navElement.querySelectorAll('a');
 
-        // The URL to replace existing href values
-        var newURL = 'https://imsu.quickassistant.me/student';
+            // The URL to replace existing href values
+            var newURL = 'https://imsu.quickassistant.me/student';
 
-        // Loop through each anchor element and update the href attribute
-        anchorElements.forEach(function(anchorElement) {
-            anchorElement.setAttribute('href', newURL);
+            // Loop through each anchor element and update the href attribute
+            anchorElements.forEach(function(anchorElement) {
+                anchorElement.setAttribute('href', newURL);
+            });
         });
-
 
         @endif
     </script>
