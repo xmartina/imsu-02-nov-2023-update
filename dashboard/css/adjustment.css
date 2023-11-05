@@ -72,7 +72,7 @@ input.course-form:hover {
     transition: all 340ms linear;
 }
 input.course-form:focus {
-    border-color: #28a745; /* Border color on click/focus */
+    border-color: #28a745!important; /* Border color on click/focus */
     transition: all 500ms ease-in-out;
 }
 .form-mn button{
