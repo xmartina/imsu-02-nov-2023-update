@@ -36,8 +36,18 @@ class LibraryController extends Controller
         $data['route']     = $this->route;
         $data['view']      = $this->view;
         $data['path']      = $this->path;
-        
+
         $student = Student::where('id', Auth::guard('student')->user()->id)->first();
+
+        //Course form reg
+        if(isset($enroll) && isset($session)){
+            // Get the student's pin registration status.
+            $isPinReg = Student::where('id', $student)->first()->is_pin_reg;
+
+            $data['isPinReg'] = $isPinReg; // Pass the isPinReg value to the view.
+
+            // ... previous code ...
+        }
 
         if(isset($student->member)){
             $data['rows'] = IssueReturn::where('member_id', $student->member->id)
